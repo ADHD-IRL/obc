@@ -1,10 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
   "headers": [
     {
-      "source": "/obsidianknight.png",
+      "source": "/public/obsidianknight.png",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
