@@ -25,7 +25,21 @@
       inset: 0;
       width: 100%; height: 100%;
       object-fit: cover;
+      object-position: center center;
       z-index: 0;
+    }
+
+    @media (max-width: 768px) {
+      #bg-video {
+        object-fit: cover;
+        object-position: 60% center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #bg-video {
+        object-position: 70% center;
+      }
     }
 
     /* Overlay */
@@ -172,6 +186,21 @@
       flex-shrink: 0;
     }
     .enter-btn:hover svg { transform: translateX(4px); }
+
+    @media (max-width: 768px) {
+      .top-text { display: none; }
+      .tagline  { display: none; }
+
+      #content {
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .bottom-cta {
+        justify-content: center;
+      }
+    }
 
     @media (max-width: 480px) {
       .enter-btn { padding: 0.8rem 2rem; font-size: 0.75rem; }
